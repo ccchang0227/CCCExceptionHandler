@@ -1,6 +1,0 @@
-use_frameworks!
-target 'CCCExceptionHandler_Tests' do
-  pod 'CCCExceptionHandler', :path => '../'
-  
-  
-end

@@ -1,6 +1,6 @@
 # CCCExceptionHandler
 
-[![CI Status](http://img.shields.io/travis/Chih-chieh Chang/CCCExceptionHandler.svg?style=flat)](https://travis-ci.org/Chih-chieh Chang/CCCExceptionHandler)
+[![CI Status](http://img.shields.io/travis/ccchang0227/CCCExceptionHandler.svg?style=flat)](https://travis-ci.org/ccchang0227/CCCExceptionHandler)
 [![Version](https://img.shields.io/cocoapods/v/CCCExceptionHandler.svg?style=flat)](http://cocoapods.org/pods/CCCExceptionHandler)
 [![License](https://img.shields.io/cocoapods/l/CCCExceptionHandler.svg?style=flat)](http://cocoapods.org/pods/CCCExceptionHandler)
 [![Platform](https://img.shields.io/cocoapods/p/CCCExceptionHandler.svg?style=flat)](http://cocoapods.org/pods/CCCExceptionHandler)
@@ -17,7 +17,7 @@ CCCExceptionHandler is available through [CocoaPods](http://cocoapods.org). To i
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod "CCCExceptionHandler"
+pod 'CCCExceptionHandler', :path => '~/Desktop/iOS/Pods/CCCExceptionHandler'
 ```
 
 ## Author
