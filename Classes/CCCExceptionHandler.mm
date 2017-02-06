@@ -39,12 +39,14 @@ static void CCCUncaughtExceptionHandler(NSException *exception) {
     
     [CCCExceptionHandler sharedInstance].didCaughtException = YES;
     
+    /* Custom Exception
     NSArray *callStack = [CCCExceptionHandler _backtrace];
     NSMutableDictionary *userInfo = [NSMutableDictionary dictionaryWithDictionary:exception.userInfo];
     [userInfo setObject:callStack forKey:CCCExceptionHandlerAddressesKey];
-    exception = [NSException exceptionWithName:exception.name
-                                        reason:exception.reason
-                                      userInfo:userInfo];
+    NSException *ex = [NSException exceptionWithName:exception.name
+                                              reason:exception.reason
+                                            userInfo:userInfo];
+    //*/
     
     [[CCCExceptionHandler sharedInstance] performSelectorOnMainThread:@selector(_handleException:)
                                                            withObject:exception
@@ -68,7 +70,8 @@ static void CCCSignalHandler(int signal) {
     }
     
     NSArray *callStack = [CCCExceptionHandler _backtrace];
-    NSDictionary *userInfo = @{CCCExceptionHandlerSignalKey:@(signal), CCCExceptionHandlerAddressesKey:callStack};
+    NSDictionary *userInfo = @{CCCExceptionHandlerSignalKey:@(signal),
+                               CCCExceptionHandlerAddressesKey:callStack};
     NSException *exception = [NSException exceptionWithName:CCCExceptionHandlerSignalExceptionName
                                                      reason:[NSString stringWithFormat:@"Signal %d was raised.", signal]
                                                    userInfo:userInfo];

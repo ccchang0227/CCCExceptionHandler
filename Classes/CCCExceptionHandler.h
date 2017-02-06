@@ -9,6 +9,10 @@
 #import <Foundation/Foundation.h>
 
 
+FOUNDATION_EXPORT NSString *const CCCExceptionHandlerSignalExceptionName;
+FOUNDATION_EXPORT NSString *const CCCExceptionHandlerSignalKey;
+FOUNDATION_EXPORT NSString *const CCCExceptionHandlerAddressesKey;
+
 @protocol CCCExceptionHandlerDelegate;
 @interface CCCExceptionHandler : NSObject
 

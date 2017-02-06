@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'CCCExceptionHandler'
-  s.version          = '0.0.1'
+  s.version          = '0.0.5'
   s.summary          = 'A library use for catching uncaught exceptions and signals.'
 
   s.homepage         = 'http://realtouchapp.com'
