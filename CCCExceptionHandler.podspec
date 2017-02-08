@@ -6,8 +6,8 @@ Pod::Spec.new do |s|
   s.homepage         = 'http://realtouchapp.com'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.authors          = { 'Chih-chieh Chang' => 'ccch.realtouch@gmail.com' }
-  #s.source           = { :git => 'https://github.com/ccchang0227/CCCExceptionHandler.git', :tag => s.version.to_s }
-  s.source           = { :path => '~/Desktop/iOS/Pods/CCCExceptionHandler' }
+  s.source           = { :git => 'git@github.com:realtouchapp/CCCExceptionHandler.git', :tag => s.version.to_s }
+  #s.source           = { :path => '~/Desktop/iOS/Pods/CCCExceptionHandler' }
 
   s.requires_arc = false
   s.ios.deployment_target = '7.0'
