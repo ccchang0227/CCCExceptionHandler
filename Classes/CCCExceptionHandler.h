@@ -18,7 +18,7 @@ FOUNDATION_EXPORT NSString *const CCCExceptionHandlerAddressesKey;
 /**
  * Class use to catch uncaught exceptions and signals.
  *
- * @version 0.0.5
+ * @version 0.0.6
  * @author Chih-chieh Chang
  * @date 2017-02-21
  */
