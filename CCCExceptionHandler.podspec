@@ -3,11 +3,10 @@ Pod::Spec.new do |s|
   s.version          = '0.0.5'
   s.summary          = 'A library use for catching uncaught exceptions and signals.'
 
-  s.homepage         = 'http://realtouchapp.com'
+  s.homepage         = 'https://github.com/ccchang0227/CCCExceptionHandler.git'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.authors          = { 'Chih-chieh Chang' => 'ccch.realtouch@gmail.com' }
-  s.source           = { :git => 'git@github.com:realtouchapp/CCCExceptionHandler.git', :tag => s.version.to_s }
-  #s.source           = { :path => '~/Desktop/iOS/Pods/CCCExceptionHandler' }
+  s.source           = { :git => 'https://github.com/ccchang0227/CCCExceptionHandler.git', :tag => s.version.to_s }
 
   s.requires_arc = false
   s.ios.deployment_target = '7.0'
@@ -15,6 +14,5 @@ Pod::Spec.new do |s|
 
   s.source_files = 'Classes/**/*.{h,mm}'
 
-  s.public_header_files = 'Classes/**/*.h'
   s.frameworks = 'Foundation'
 end

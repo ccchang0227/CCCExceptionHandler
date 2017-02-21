@@ -14,6 +14,14 @@ FOUNDATION_EXPORT NSString *const CCCExceptionHandlerSignalKey;
 FOUNDATION_EXPORT NSString *const CCCExceptionHandlerAddressesKey;
 
 @protocol CCCExceptionHandlerDelegate;
+
+/**
+ * Class use to catch uncaught exceptions and signals.
+ *
+ * @version 0.0.5
+ * @author Chih-chieh Chang
+ * @date 2017-02-21
+ */
 @interface CCCExceptionHandler : NSObject
 
 @property (assign, nonatomic) id<CCCExceptionHandlerDelegate> delegate;
